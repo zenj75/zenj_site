@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+<html lang="ru">
+
+<head>
+	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<title>Сайт-визитка. Эбаут ми</title>
+</head>
+
+<body>
+	<div class="container">
+        <div class="header">
+          <div class="head1">
+            <h1>Django Student Blog</h1>  
+          </div>
+            <ul class="menu">
+              <li>
+                <a href="/">About me</a>
+              </li>
+              <li>
+                <a href="/school/">Life school</a>
+              </li>
+              <li>
+                <a href="/work/">Work is work</a>
+              </li>
+            </ul>
+          <div class="cls"></div>
+        </div> 
+        <div class="content">
+
+
+            <p> Описание о работе </p>  
+        </div> 
+
+        <div class="footer">
+            <footer>
+                <p> &copy; Все права защищены. Правообладатель, как всегда, ни за что не отвечает :) </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
