@@ -31,10 +31,17 @@
           <div class="cls"></div>
         </div> 
         <div class="content">
+            <h3> Описание о работе </h3>
 
-
-            <p> Описание о работе </p>  
-        </div> 
+            <div class="works_list">
+                <h4>Где трудился:<h4>
+                {% for w in my_works %}
+                    <ul>
+                        <li> {{w}} </li>
+                    </ul>
+                {% endfor %}
+            </div>
+        </div>
 
         <div class="footer">
             <footer>
