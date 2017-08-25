@@ -1,22 +1,42 @@
 /* CSS file for school.html */
 
 .school_desc {
-    border: 5px solid grey;
+/*    border: 5px solid grey;*/
     font-size: 16px;
     float: left;
     padding-left: 30px;
     padding-right: 40px;
     padding-bottom: 50px;
+    margin-top: -10px;
     color: #FFF5DA;
     background-color: #FF9340;
 }
 
 .school_list{
-    border: 5px solid grey;
+/*    border: 5px solid grey;*/
     float:right;
     padding: 15px;
+    margin-top: -10px;
     background-color: #4575D4;
     color: #E6EEFF;
     font-size: 20px;
     font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+.block4 {
+    border: 1px solid grey;
+    background-color: #FFCC33;
+    font-family: Arial;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 10px;
+}
+
+.block5 {
+/*    border: 1px solid white;*/
+    background-color: #6699CC;
+    display: inline-block;
+    margin-right: 20px;
+/*    margin-top: -40px;*/
 }

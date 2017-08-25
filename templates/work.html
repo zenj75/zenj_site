@@ -1,62 +1,39 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-{% load staticfiles %}
-<html lang="ru">
+{% block "panel1" %}
+      <div class="panel1">
+	      <p>
+            Когда взберёшься на высокую гору, перед тобой открывается огромное множество гор, на которые ещё только предстоит взобраться.
+            (Нельсон Мандела)
+	      </p>
+      </div>
+{% endblock %}
 
-<head>
-	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
-	<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-	<meta charset="UTF-8">
-	<title>Сайт-визитка. Эбаут ми</title>
-</head>
-
-<body>
-	<div class="container">
-        <div class="header">
-          <div class="head1">
-            <h1>Django Student Blog</h1>  
-          </div>
-            <ul class="menu">
-              <li>
-                <a href="/">About me</a>
-              </li>
-              <li>
-                <a href="/school/">School of Life</a>
-              </li>
-              <li>
-                <a href="/work/">Work is work</a>
-              </li>
-            </ul>
-          <div class="cls"></div>
-        </div> 
-        <div class="content">
+{% block "content" %}
+    <div class="wrapper3">
+        <div class="work_descr">
             <h3> Описание о работе </h3>
-
-            <div class="works_list">
-                <h4>Где трудился:</h4>
-                <ul>
-                {% for w in my_works %}
-                    <li> {{w}} </li>
-                {% endfor %}
-                </ul>
-            </div>
         </div>
-        <div>
+        <div class="works_list">
+            <h4>:</h4>
+            <ul>
+            {% for w in my_works %}
+                <li> {{w}} </li>
+            {% endfor %}
+            </ul>
+
+        </div>
+        <div class="cls"></div>
+
+<!--        <div class="tmp_video">
             <p>
                 Если вы устали всё это читать - отдохните, поберегите глаза. Немного полезной информации ;)
             </p>
 
             <div class="video">
                 <iframe src="https://video.oum.ru/embed/10052" width="640" height="360" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" frameborder="0"></iframe>
-            </div>
+            </div>-->
 
         </div>
-        <div class="footer">
-            <footer>
-                <p> &copy; Все права защищены. Правообладатель, как всегда, ни за что не отвечает :) </p>
-            </footer>
-        </div>
     </div>
-</body>
-</html>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+  	<link rel="stylesheet" href="{% static 'css/about.css' %}">
+  	<link rel="stylesheet" href="{% static 'css/school.css' %}">
+  	<link rel="stylesheet" href="{% static 'css/work.css' %}">
+	 <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<title>Сайт-визитка. Эбаут ми</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+
+      <div class="head1">
+        <h1>Django Student Blog</h1>
+      </div>
+
+        <ul class="menu">
+          <li class="{% if not page %}active{% endif %}">
+            <a href="/">About me</a>
+          </li>
+          <li class="{% if page == 'school' %}active{% endif %}">
+            <a href="/school/">School of Life</a>
+          </li>
+          <li class="{% if page == 'work' %}active{% endif %}">
+            <a href="/work/">Work is work</a>
+          </li>
+        </ul>
+      <div class="cls"></div>
+    </div>
+
+    {% block "panel1" %}
+      <div class="panel1">
+	      <p>
+	      	Единственное счастье в жизни — это постоянное стремление вперёд. (Эмиль Золя)
+	      </p>
+      </div>
+    {% endblock %}
+
+    {% block "content" %}
+    {% endblock %}
+
+    <div class="cls"></div>
+    <div class="footer">
+      <p>Все права защищены. &copy;</p>    
+    </div>
+
+      <div class="contacts">
+          <ul>
+              <li>Контактный телефон: +7 (9I6)317 2O-55</li>
+              <li>e-mail: zenj75@gmail.com</li>
+              <li>skype: ezakharov75</li>
+          </ul>
+      </div>
+
+  </div>
+</body>
+</html>

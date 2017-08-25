@@ -1,6 +1,6 @@
 /* CSS file for about.html */
 
-/* Панель с цитатой под хедером */
+/* ####  Панель с цитатой под хедером #### */
 .panel1 {
 /*  border: 1px solid white;*/
   background-color:#6B8FD4;
@@ -28,31 +28,27 @@
     font-size: 21px;
 }
 
-/* левый блок */
+/* #####  левый блок  #######*/
 .aside {
-/*  border: 1px solid yellow; */
-  float: left;
-/*  display: block;*/
-  background-color:  #FFB700;
-  width: 27%;
-  padding-left: 15px;
-/*  height: 350px;*/
+    float: left;
+    background-color:  #FFB700;
+    width: 27%;
+    padding-left: 15px;
+    /*  display: block;*/
 }
 .about_me {
-/*    border: 1px solid #BFA730;*/
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 20px;
     margin-top: 20px;
-/*    float: left;*/
+    /*    float: left;*/
     font-family: Courier;
     color: #FF7400;
     background: #FFD100;
 }
 
 .aside p {
-/*    border: 1px solid grey;*/
     color: #FBFBFB;
     font-family: Arial;
     padding-right: 20px;
@@ -66,45 +62,56 @@
     margin-top: -20px;
 }
 
-.block2 {
-/*    background-color:  brown;*/
-/*    border: 1px solid white;*/
-    margin-right: 10px;
-    padding: 10px;
-}
-
-.block2  li {
-    background-color:  orange;
-    list-style-type: none;
-    color: white;
-    margin-right: 40px;
-    padding-left:20px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-family: Arial;
-}
-/* средний блок */
+/* #### средний блок #### */
 .aside2 {
-/*    border: 3px solid grey;*/
-/*    display: block;*/
-/*    background-color:  #FF9500;*/
-/*    width:43.5%;*/
-/*    height: 350px;*/
   float: left;
+  background-color:  #FFB700;
 }
 
 .aside2 img {
-/*    border: 2px solid grey;*/
     margin-bottom: -5px;
 }
 
-/* правый блок */
+/*  ####  правый блок  #### */
 .aside3 {
     border: 1px solid yellow;
     background-color:  #FFB700;
-/*    height: 350px;*/
     width: 35%;
     padding-left: 15px;
     float: right;
 /*  display: block;*/
 }
+
+.more_about {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: Courier;
+    color: #FF7400;
+    background: #FFD100;
+}
+
+.block1 {
+    margin-top: 80px;
+}
+
+.block2 {
+/*    border: 1px solid white;*/
+    margin-right: 10px;
+    padding: 10px;
+    margin-top: -40px;
+    margin-right: 40px;
+}
+
+.block2  ul {
+    display: block;
+    background-color:  orange;
+    list-style-type: none;
+    color: white;
+    padding: 20px;
+    font-family: Arial;
+}
+
+

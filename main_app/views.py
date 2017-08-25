@@ -11,7 +11,9 @@ def main_view(request):
 def school_view(request):
     learns = ['Димитровградский Механико-технологический Колледж Молочной Промышленности',
               'Институт международного права и экономики имени А.С. Грибоедова',
-              'различные курсы Cisco и Solaris']
+              'Различные курсы (Cisco,Solaris)',
+              'Курсы GeekBrains (HTML/CSS, Python1)'
+              ]
     return render_to_response('school.html', {'learns': learns})
 
 

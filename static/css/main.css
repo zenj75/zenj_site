@@ -4,8 +4,9 @@
 
 body {
     background: #f8f8f8;
-    padding-left: 5px;
-    padding-right: 5px;
+    /*padding-left: 5px;
+    padding-right: 5px;*/
+    margin 0;
 }
 
 .container {
@@ -24,14 +25,10 @@ body {
 
 }
 
-
 .menu {
     /*   border: 1px solid green;*/
     list-style-type: none;
     display: flex;
-    /*   float: right;
-    width: 60%;*/
-
 }
 
 .menu li {
@@ -44,7 +41,7 @@ body {
 
 .menu li a:hover {
     /*	background-color: #009999;*/
-    color: #BF8430;
+    color: #FFCC00;
 }
 
 .menu li a {
@@ -76,10 +73,9 @@ h1 {
 }
 h3 {
     color: #FF6F00;
-    font-family: Arinal;
-    font-size: 18px;
+    font-family: Arial;
+    font-size:20px;
 }
-
 
 /* Обертка основной части страницы */
 .wrapper {
@@ -101,6 +97,12 @@ h3 {
 
 .footer p {
 	margin-left: 30px;
+}
+
+.contacts {
+    border: 1px solid black;
+    color: white;
+    font-family: Arial;
 }
 
 .cls {
