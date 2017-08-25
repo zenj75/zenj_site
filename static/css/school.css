@@ -1,0 +1,22 @@
+/* CSS file for school.html */
+
+.school_desc {
+    border: 5px solid grey;
+    font-size: 16px;
+    float: left;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    color: #FFF5DA;
+    background-color: #FF9340;
+}
+
+.school_list{
+    border: 5px solid grey;
+    float:right;
+    padding: 15px;
+    background-color: #4575D4;
+    color: #E6EEFF;
+    font-size: 20px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}

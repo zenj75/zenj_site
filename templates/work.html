@@ -22,7 +22,7 @@
                 <a href="/">About me</a>
               </li>
               <li>
-                <a href="/school/">Life school</a>
+                <a href="/school/">School of Life</a>
               </li>
               <li>
                 <a href="/work/">Work is work</a>
@@ -34,15 +34,24 @@
             <h3> Описание о работе </h3>
 
             <div class="works_list">
-                <h4>Где трудился:<h4>
+                <h4>Где трудился:</h4>
+                <ul>
                 {% for w in my_works %}
-                    <ul>
-                        <li> {{w}} </li>
-                    </ul>
+                    <li> {{w}} </li>
                 {% endfor %}
+                </ul>
             </div>
         </div>
+        <div>
+            <p>
+                Если вы устали всё это читать - отдохните, поберегите глаза. Немного полезной информации ;)
+            </p>
 
+            <div class="video">
+                <iframe src="https://video.oum.ru/embed/10052" width="640" height="360" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" frameborder="0"></iframe>
+            </div>
+
+        </div>
         <div class="footer">
             <footer>
                 <p> &copy; Все права защищены. Правообладатель, как всегда, ни за что не отвечает :) </p>

@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-
 {% load staticfiles %}
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
 	<!--<link rel="stylesheet" type="text/css" href="style.css">-->
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+  	<link rel="stylesheet" href="{% static 'css/about.css' %}">
+  	<link rel="stylesheet" href="{% static 'css/school.css' %}">
+  	<link rel="stylesheet" href="{% static 'css/work.css' %}">
 	 <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 	<meta charset="UTF-8">
 	<title>Сайт-визитка. Эбаут ми</title>
@@ -24,7 +26,7 @@
             <a href="/">About me</a>
           </li>
           <li>
-            <a href="/school/">Life school</a>
+            <a href="/school/">School of Life</a>
           </li>
           <li>
             <a href="/work/">Work is work</a>
@@ -35,17 +37,22 @@
 
     <div class="panel1">
 	      <p>
-	      	Здесь будет, может быть, какая нибудь заумная цитата красивым шрифтом :)
+	      	Единственное счастье в жизни — это постоянное стремление вперёд. (Эмиль Золя)
 	      </p>
     </div>
     
     <div class="wrapper">
       
       <div class="aside">
-        <h2>header2</h2>
-        <p>
-          Тут будет некий текст c описанием о себе.
-        </p>
+        <div class="about_me">
+          <h2>AboutMe</h2>
+        </div>
+        <div class="block0">
+          <p>   Здравствуйте! Меня зовут {{name}} {{surname}} {{middle_name}}.</p>
+          <p>
+             Это небольшой проект-визитка, создаваемый в контексте обучения по курсу Django от компании GeekBrains.
+          </p>
+        </div>
       </div>
       
       <div class="aside2">
@@ -59,12 +66,17 @@
       
       <div class="aside3">
         <div class="block2">
-         <h3>header3</h3>
-          <p>
-            планы:
-            научиться делать фоновый рисунок с тектом на нём в цветовой гамме или ещё какой descr...
-            или полностью фон на горизонтальый блок (фото поверх), а поверх фона текст.
-          </p>
+         <h3>Если подробнее: </h3>
+          <li>
+            <li>Год рождения:     1975</li>
+            <li>Место рождения:     г.Димитровград</li>
+            <li>Место текущего проживания:    Москва</li>
+            <li>Место основной работы:    МГТС Москва<li>
+            <li>Актуальная профессия:     системный инженер<li>
+            <li>Дхармическая профессия:    преподаватель йоги<li>
+            <li>Место актуальной учёбы:    GeekBrains<li>
+            <li>Текущий курс:     Django<li>
+          </ul>
         </div>
       </div>
     </div> 

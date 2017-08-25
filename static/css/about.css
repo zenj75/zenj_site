@@ -1,0 +1,110 @@
+/* CSS file for about.html */
+
+/* Панель с цитатой под хедером */
+.panel1 {
+/*  border: 1px solid white;*/
+  background-color:#6B8FD4;
+  width: 100%;
+  height: 70px;
+  margin-top: -23px;
+}
+
+/*.panel1 a {
+  display: block;
+  list-style-type: none;
+*//*  border: 1px solid yellow;*//*
+}*/
+
+/*.panel1 a img {
+  float: right;
+  border: 1px solid grey;
+}*/
+
+.panel1 p {
+	padding-left: 50px;
+	padding-top: 20px;
+    color: #DFEAFF;
+    font-family: 'Lobster';
+    font-size: 21px;
+}
+
+/* левый блок */
+.aside {
+/*  border: 1px solid yellow; */
+  float: left;
+/*  display: block;*/
+  background-color:  #FFB700;
+  width: 27%;
+  padding-left: 15px;
+/*  height: 350px;*/
+}
+.about_me {
+/*    border: 1px solid #BFA730;*/
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+/*    float: left;*/
+    font-family: Courier;
+    color: #FF7400;
+    background: #FFD100;
+}
+
+.aside p {
+/*    border: 1px solid grey;*/
+    color: #FBFBFB;
+    font-family: Arial;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+.block0 {
+    background-color: #FFA700;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: -20px;
+}
+
+.block2 {
+/*    background-color:  brown;*/
+/*    border: 1px solid white;*/
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.block2  li {
+    background-color:  orange;
+    list-style-type: none;
+    color: white;
+    margin-right: 40px;
+    padding-left:20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: Arial;
+}
+/* средний блок */
+.aside2 {
+/*    border: 3px solid grey;*/
+/*    display: block;*/
+/*    background-color:  #FF9500;*/
+/*    width:43.5%;*/
+/*    height: 350px;*/
+  float: left;
+}
+
+.aside2 img {
+/*    border: 2px solid grey;*/
+    margin-bottom: -5px;
+}
+
+/* правый блок */
+.aside3 {
+    border: 1px solid yellow;
+    background-color:  #FFB700;
+/*    height: 350px;*/
+    width: 35%;
+    padding-left: 15px;
+    float: right;
+/*  display: block;*/
+}
