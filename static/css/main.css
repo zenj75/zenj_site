@@ -32,7 +32,8 @@ body {
 }
 
 .menu li {
-    /*  border: 1px solid yellow;*/
+/*      border: 1px solid yellow;*/
+    display: inline-block;
     width: 15%;
     height: 35px;
     padding-top: 10px;
@@ -45,7 +46,7 @@ body {
 }
 
 .menu li a {
-    /*   border: 1px solid brown;*/
+/*    border: 1px solid brown;*/
     display: block;
     width: 100%;
     height: 100%;
@@ -57,12 +58,18 @@ body {
     font-family: Arial;
 }
 
+.logo_header {
+/*    border: 1px solid white;*/
+    float: right;
+    display: inline-block;
+}
+
 .head1 {
     /*  border: 1px solid brown;*/
-    display: block;
+    display: inline-block;
     float: left;
     margin-left: 15px;
-    margin-top: 0;
+    margin-top: -10px;
     margin-right: 95px;
 }
 
@@ -90,25 +97,39 @@ h3 {
 .footer {
     width: 100%;
     height: 200px;
-    border: 1px solid black;
+/*    border: 1px solid black;*/
     background-color:  #53565D;
     color:  #E6EEFF;
 }
 
+.footer {
+/*    display: flex;*/
+}
 .footer p {
+    margin-top: 30px;
 	margin-left: 30px;
+	margin-right: 40px;
+	display: inline-block;
+	float: right;
 }
 
 .contacts {
-    border: 1px solid black;
+/*    border: 1px solid black;*/
     color: white;
     font-family: Arial;
+    margin-left: 80px;
+    margin-top: 15px;
+    display: block;
+    float: left;
+}
+
+.contacts ul{
+    list-style-type: none;
 }
 
 .cls {
   clear: both;
 }
-
 
 
 .content{

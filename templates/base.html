@@ -1,4 +1,4 @@
-{% load staticfiles %}
+<!--{% load staticfiles %}-->
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -10,7 +10,7 @@
   	<link rel="stylesheet" href="{% static 'css/work.css' %}">
 	 <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 	<meta charset="UTF-8">
-	<title>Сайт-визитка. Эбаут ми</title>
+	<title>Сайт-визитка. AboutMe</title>
 </head>
 
 <body>
@@ -32,7 +32,15 @@
             <a href="/work/">Work is work</a>
           </li>
         </ul>
-      <div class="cls"></div>
+
+<!--        <div class="logo_header">
+            <a href="#">
+                <img src="{% static "images/python_django.png" %}" alt="logo_header"
+                width=80px
+                height=80px>
+            </a>
+        </div>-->
+        <div class="cls"></div>
     </div>
 
     {% block "panel1" %}
@@ -48,17 +56,17 @@
 
     <div class="cls"></div>
     <div class="footer">
-      <p>Все права защищены. &copy;</p>    
-    </div>
-
       <div class="contacts">
           <ul>
-              <li>Контактный телефон: +7 (9I6)317 2O-55</li>
-              <li>e-mail: zenj75@gmail.com</li>
-              <li>skype: ezakharov75</li>
+              <li>Контактный телефон: {{telefon}} </li>
+              <li>e-mail: {{email}} </li>
+              <li>skype: {{skype}} </li>
           </ul>
       </div>
-
+        <div class="ftr">
+            <p>Все права защищены. &copy;</p>
+        </div>
+    </div>
   </div>
 </body>
 </html>

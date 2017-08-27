@@ -4,12 +4,33 @@
 /*    border: 5px solid grey;*/
     font-size: 16px;
     float: left;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-right: 40px;
     padding-bottom: 50px;
     margin-top: -10px;
     color: #FFF5DA;
     background-color: #FF9340;
+}
+
+.school_desc h3 {
+/*    border: 1px solid white;*/
+    background-color: #FFCC33;
+    display: inline-block;
+    padding: 15px;
+    margin-left: 35px;
+    color: #E6EEFF;
+}
+
+.school_p {
+    background-color: #FFB073;
+    padding: 25px;
+    margin-top: -40px;
+    color:  white;
+    font-size: 16px;
+    font-family: Arial;
+/*    border: 1px solid white;*/
+
+
 }
 
 .school_list{

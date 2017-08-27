@@ -14,11 +14,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from main_app.views import main_view, school_view, work_view
+from main_app.views import main_view, school_view, work_view,base_view
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', main_view),
     url(r'^school/$', school_view),
-    url(r'^work/$', work_view)
+    url(r'^work/$', work_view),
+    # url(r'^$', base_view)
 ]
