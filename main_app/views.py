@@ -1,18 +1,20 @@
 from django.shortcuts import render, render_to_response
+import datetime
+
 
 
 def main_view(request):
     fname = "Евгений"
     surname = "Николаевич"
     middle_name = "Захаров"
-    bdate = 'May 09, 1975'
+    bdate = datetime.date(1975, 5, 9)
     bplace = 'Димитровград'
     wplace = 'МГТС'
     hplace = 'Москва'
     prof = 'системный инженер'
     dprof = 'преподаватель йоги'
-    learn = 'GeekBrains'
-    course = 'Djano'
+    learn = '<a href="https://geekbrains.ru/" title="GeekBrains">GeekBrains</a>'
+    course = 'Django'
     return render_to_response('index.html', {'name':fname, 'surname':surname, 'middle_name':middle_name,
                                              'bdate':bdate, 'bplace':bplace,'wplace':wplace, 'hplace':hplace,
                                              'prof':prof, 'dprof':dprof,'learn':learn,'course':course })

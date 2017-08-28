@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% load staticfiles %}
-{% block "panel1" %}
+{% block panel1 %}
     {{block.super}}
 {% endblock %}
-{% block "content" %}
+{% block content %}
     <div class="wrapper">
       <div class="aside">
         <div class="about_me">
@@ -13,7 +13,7 @@
         <div class="block0">
           <p>   Здравствуйте! Меня зовут <b>{{name|title}} {{surname|title}} {{middle_name|title}}</b>.</p>
           <p>
-            Это небольшой проект-визитка, создаваемый в контексте обучения по курсу <b>Django</b> от компании <i>GeekBrains</i>.
+            Это небольшой проект-визитка, создаваемый в контексте обучения по курсу <b>Django</b> от компании <i>{{learn|safe}}</i>.
           </p>
         </div>
       </div>
@@ -34,14 +34,14 @@
           </div>
           <div class="block2">
             <ul>
-              <li>  Дата рождения:            {{bdate|date:"d/m/Y"}}</li>
+              <li>  Дата рождения:            {{bdate|date:"d M Y"}}</li>
               <li>  Место рождения:           {{ bplace}}</li>
               <li>  Место текущего проживания:{{ hplace}}</li>
               <li>  Место основной работы:    {{ wplace}}<li>
               <li>  Актуальная профессия:     {{ prof}}<li>
               <li>  Дхармическая профессия:   {{ dprof}}<li>
-              <li>  Место актуальной учёбы:    {{ learn }}<li>
-              <li>  Текущий курс:     {{course}}<li>
+              <li>  Место актуальной учёбы:   {{learn|safe}}<li>
+              <li>  Текущий курс:           {% block hurry%} {{course}} {%endblock%}<li>
             </ul>
           </div>
         </div>
