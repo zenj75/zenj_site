@@ -23,13 +23,13 @@
 
         <ul class="menu">
           <li class="{% if not page %}active{% endif %}">
-            <a href="/">About me</a>
+            <a href="{% url 'about' %}">About me</a>
           </li>
           <li class="{% if page == 'school' %}active{% endif %}">
-            <a href="/school/">School of Life</a>
+            <a href="{% url 'school' %}">School of Life</a>
           </li>
           <li class="{% if page == 'work' %}active{% endif %}">
-            <a href="/work/">Work is work</a>
+            <a href="{% url 'work' %}">Work is work</a>
           </li>
         </ul>
 

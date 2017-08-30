@@ -18,8 +18,8 @@ from main_app.views import main_view, school_view, work_view,base_view
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', main_view),
-    url(r'^school/$', school_view),
-    url(r'^work/$', work_view),
+    url(r'^$', main_view, name = 'about'),
+    url(r'^school/$', school_view, name = 'school'),
+    url(r'^work/$', work_view, name = 'work'),
     # url(r'^$', base_view)
 ]

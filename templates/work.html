@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block panel1 %}
-      <div class="panel1">
-	      <p>
-            Когда взберёшься на высокую гору, перед тобой открывается огромное множество гор, на которые ещё только предстоит взобраться.
-            (Нельсон Мандела)
-	      </p>
-      </div>
+    <div class="panel1">
+      <p>
+        Когда взберёшься на высокую гору, перед тобой открывается огромное множество гор, на которые ещё только предстоит взобраться.
+        (Нельсон Мандела)
+      </p>
+    </div>
 {% endblock %}
 
 {% block content %}
@@ -27,9 +27,9 @@
             {% if my_works %}
             {% for w in my_works %}
                 <div class="w_lst">
-                    <p>Место работы:    <i>{{w.name}} </i></p>
+                    <p>Место работы:    <i>{{w.wname}} </i></p>
                     <p>Профессия:       <i>{{w.prof}}</i></p>
-                    <p>Что делал:       <i>{{w.desc}}</i></p>
+                    <p>Что делал:       <i>{{w.wdescr}}</i></p>
                 </div>
             {% endfor %}
             {% else %}
@@ -38,16 +38,5 @@
             </div>
         </div>
         <div class="cls"></div>
-
-<!--        <div class="tmp_video">
-            <p>
-                Если вы устали всё это читать - отдохните, поберегите глаза. Немного полезной информации ;)
-            </p>
-
-            <div class="video">
-                <iframe src="https://video.oum.ru/embed/10052" width="640" height="360" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" frameborder="0"></iframe>
-            </div>-->
-
-        </div>
     </div>
 {% endblock %}
