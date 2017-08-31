@@ -9,17 +9,17 @@ import csv
 try:
 	con = sqlite3.connect('db.sqlite3')
 except:
-	print('bzz')
+	print('some wrong..')
 
 with con:
 	cur = con.cursor()
-	cur.execute("select * from main_app_work;")
+	cur.execute("select * from main_app_person;")
 
 # with open('db.json', 'w') as f:
 # 	json.dump(cur, f)
 
 with open("db_dump.csv", "w") as csv_file:
-    csv_writer = csv.writer(csv_file)
+    csv_writer = csv.writer(csv_file, delimiter = ';')
     csv_writer.writerow([i[0] for i in cur.description])  #write headers
     csv_writer.writerows(cur)
 

@@ -21,6 +21,7 @@ class Person(models.Model):
     bdate = models.DateField(verbose_name='Дата рождения',max_length=32);
     bplace = models.CharField(verbose_name='Место рождения',max_length=32);
     cur_place = models.CharField(verbose_name='Место проживания',max_length=32);
+    tel = models.CharField(verbose_name='Телефон',max_length=9)
     email = models.EmailField(verbose_name='Email',blank='True',max_length=32);
     skype = models.CharField(verbose_name='Skype',blank='True',max_length=32);
     sprof = models.CharField(verbose_name='Доп. профессия',max_length=32,blank='True');
@@ -29,9 +30,10 @@ class Person(models.Model):
         return self.fname;
 
 class School(models.Model):
+    order = models.PositiveIntegerField(verbose_name='порядковый номер',default=0);
     lname = models.CharField(verbose_name='Учебное заведение',max_length=120);
     course = models.CharField(verbose_name='Факультет/Курс',max_length=32);
-    site = models.CharField(verbose_name='Сайт',blank='True',max_length=32);
+    site = models.CharField(verbose_name='Сайт',max_length=32,default='.');
 
     def __str__(self):
         return self.lname;

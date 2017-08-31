@@ -5,13 +5,14 @@
     {{block.super}}
 {% endblock %}
 {% block content %}
+{% for p in pers %}
     <div class="wrapper">
       <div class="aside">
         <div class="about_me">
           <h3>AboutMe</h3>
         </div>
         <div class="block0">
-          <p>   Здравствуйте! Меня зовут <b>{{name|title}} {{surname|title}} {{middle_name|title}}</b>.</p>
+          <p>   Здравствуйте! Меня зовут <b>{{p.sname|title}} {{p.fname|title}} {{p.mname|title}}</b>.</p>
           <p>
             Это небольшой проект-визитка, создаваемый в контексте обучения по курсу <b>Django</b> от компании <i>{{learn|safe}}</i>.
           </p>
@@ -34,17 +35,18 @@
           </div>
           <div class="block2">
             <ul>
-              <li>  Дата рождения:            {{bdate|date:"d M Y"}}</li>
-              <li>  Место рождения:           {{ bplace}}</li>
-              <li>  Место текущего проживания:{{ hplace}}</li>
-              <li>  Место основной работы:    {{ wplace}}<li>
-              <li>  Актуальная профессия:     {{ prof}}<li>
-              <li>  Дхармическая профессия:   {{ dprof}}<li>
-              <li>  Место актуальной учёбы:   {{learn|safe}}<li>
-              <li>  Текущий курс:             {{course}} <li>
+              <li>  Дата рождения: &emsp;             {{p.bdate|date:"d M Y"}}</li>
+              <li>  Место рождения: &emsp;            {{p.bplace}}</li>
+              <li>  Место текущего проживания: &emsp; {{p.cur_place}}</li>
+              <li>  Место основной работы: &emsp;     {{wplace}}<li>
+              <li>  Актуальная профессия: &emsp;      {{prof}}<li>
+              <li>  Дхармическая профессия: &emsp;    {{p.prof}}<li>
+              <li>  Место актуальной учёбы: &emsp;    {{learn|safe}}<li>
+              <li>  Текущий курс: &emsp;              {{course}} <li>
             </ul>
           </div>
         </div>
       </div>
     </div>
+{% endfor %}
 {% endblock %}

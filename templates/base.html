@@ -58,9 +58,11 @@
     <div class="footer">
       <div class="contacts">
           <ul>
-              <li>Контактный телефон: {{telefon}} </li>
-              <li>e-mail: {{email}} </li>
-              <li>skype: {{skype}} </li>
+              {%for p in pers%}
+              <li>Контактный телефон: &emsp;{{p.tel}} </li>
+              <li>e-mail: &emsp;{{p.email}} </li>
+              <li>skype: &emsp;{{p.skype}} </li>
+              {% endfor %}
           </ul>
       </div>
         <div class="ftr">

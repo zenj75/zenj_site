@@ -54,10 +54,16 @@
     margin-bottom: 10px;
 }
 
+.block5 li i {
+    color: #FFD473;
+    font-size: 18px;
+}
+
 .block5 {
 /*    border: 1px solid white;*/
     background-color: #6699CC;
     display: inline-block;
     margin-right: 20px;
+    padding-right: 50px;
 /*    margin-top: -40px;*/
 }

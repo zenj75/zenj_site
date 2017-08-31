@@ -24,7 +24,9 @@
             <div class="block5">
                 <ul>
                     {% for i in learns %}
-                        <li> {{i}} </li>
+                    <li>Где учился: <i>{{i.lname}}</i></li>
+                    <li>Курс/Факультет: <i>{{i.course}}</i></li>
+                    <li>Сайт: <i>{{i.site}}</i></li><br>
                     {% endfor %}
                 </ul>
             </div>

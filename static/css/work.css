@@ -35,9 +35,16 @@
     display: inline-block;
     padding: 20px;
     margin: 10px;
+    margin-right:25px;
     color: #EEEEEE;
+    font-size:16px;
     background-image: url('images/dc1.jpeg')
+}
 
+.w_lst i {
+    color: #FFE8B4;
+    color: #1435AD;
+    font-size: 18px;
 }
 
 .works_list {
